@@ -67,7 +67,7 @@ parker_compute/
 | | |
 |---|---|
 | **Legal name** | Parker AI Works, L.L.C. (pending) |
-| **Founder** | Tap Parker |
+| **Founder** | William Parker |
 | **HQ** | East Carroll Parish, Louisiana |
 | **Reach** | Remote U.S.-wide; in-person workshops within ~3 hours of Lake Providence |
 | **Phase 0 services** | AI Readiness Audit ($750), Workflow Pack ($2,500), Team Training ($1,500), Retainer ($2,000/mo) |
@@ -146,7 +146,7 @@ All content lives in `app/page.tsx`. Edit the constants at the top:
 
 For more involved changes (new section, different layout), the JSX is sectioned with HTML comments — search for `{/* services */}`, `{/* about */}`, etc.
 
-**Photo of Tap:** drop a real image at `public/tap.jpg` (any aspect ratio works; CSS handles cropping) and update the placeholder block in the About section to use `<Image src="/tap.jpg" .../>`.
+**Photo of William:** drop a real image at `public/william.jpg` (any aspect ratio works; CSS handles cropping) and update the placeholder block in the About section to use `<Image src="/william.jpg" .../>`.
 
 ### Brand reference
 

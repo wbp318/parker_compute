@@ -18,7 +18,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Parker AI Works — AI workflows for small businesses",
   description:
-    "I'm Tap Parker. I set up Claude, ChatGPT, and the tools alongside them, then train your team to use them. Based in East Carroll Parish, Louisiana. No hype, no jargon.",
+    "I'm William Parker. I set up Claude, ChatGPT, and the tools alongside them, then train your team to use them. Based in East Carroll Parish, Louisiana. No hype, no jargon.",
   openGraph: {
     title: "Parker AI Works",
     description:

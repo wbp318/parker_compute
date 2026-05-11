@@ -1,6 +1,6 @@
 # Pricing — From Zero
 
-**For:** Tap Parker · Parker AI Works
+**For:** William Parker · Parker AI Works
 **Drafted:** 2026-05-11
 
 Your first realistic customers are (a) someone you already know and (b) online/nationwide remote. That second one matters a lot. It means you are **not** pricing for the East Carroll Parish economy. You are pricing for the national AI-consulting market while *living* in a cheap parish. That's the whole geographic arbitrage and it's a real advantage — keep it in mind every time someone tries to push you under $1,000 on a real project.

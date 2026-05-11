@@ -1,6 +1,6 @@
 # Prompt Engineering Services — Founding Strategy
 
-**Founder:** Tap Parker · East Carroll Parish, Louisiana
+**Founder:** William Parker · East Carroll Parish, Louisiana
 **Drafted:** 2026-05-11
 
 ---

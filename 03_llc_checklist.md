@@ -1,6 +1,6 @@
 # LLC Formation Checklist — Parker AI Works
 
-**For:** Tap Parker · East Carroll Parish, Louisiana
+**For:** William Parker · East Carroll Parish, Louisiana
 **Drafted:** 2026-05-11
 **Verified against:** Louisiana SOS, East Carroll Parish Police Jury, IRS
 
@@ -224,7 +224,7 @@ limited liability company.
        [ADDRESS], East Carroll Parish, Louisiana.
 
 2. SOLE MEMBER
-   2.1 The sole member of the Company is Tap Parker
+   2.1 The sole member of the Company is William Parker
        ("Member"), who holds a 100% membership interest.
 
 3. MANAGEMENT
@@ -279,7 +279,7 @@ limited liability company.
 SIGNED:
 
 ____________________________________   Date: _______________
-Tap Parker, Sole Member
+William Parker, Sole Member
 ```
 
 ---

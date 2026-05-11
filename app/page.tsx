@@ -128,7 +128,7 @@ export default function Page() {
           AI workflows for small businesses that <em className="text-moss not-italic">actually want them to work.</em>
         </h1>
         <p className="mt-8 max-w-[58ch] text-lg leading-relaxed text-ink-muted md:text-xl">
-          I'm Tap Parker. I set up Claude, ChatGPT, and the tools that run alongside them — and I train your team to use them. No hype, no jargon, no demo that breaks in a week.
+          I'm William Parker. I set up Claude, ChatGPT, and the tools that run alongside them — and I train your team to use them. No hype, no jargon, no demo that breaks in a week.
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Button asChild size="lg">
@@ -236,14 +236,14 @@ export default function Page() {
           <div className="grid gap-16 md:grid-cols-[1fr_1.4fr] md:gap-24">
             <div>
               <div className="aspect-[4/5] w-full max-w-sm rounded-xl bg-cream-200 border border-ink/10 flex items-center justify-center">
-                {/* TODO: replace with real photo at /public/tap.jpg */}
-                <span className="text-xs uppercase tracking-widest text-ink-subtle">Photo of Tap</span>
+                {/* TODO: replace with real photo at /public/william.jpg */}
+                <span className="text-xs uppercase tracking-widest text-ink-subtle">Photo of William</span>
               </div>
             </div>
             <div>
               <p className="text-sm uppercase tracking-[0.18em] text-moss">About</p>
               <h2 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
-                I'm Tap. I run Parker AI Works out of northeast Louisiana.
+                I'm William. I run Parker AI Works out of northeast Louisiana.
               </h2>
               <div className="mt-8 space-y-5 text-lg leading-relaxed text-ink-muted max-w-[55ch]">
                 <p>
