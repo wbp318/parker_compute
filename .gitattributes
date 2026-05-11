@@ -1,0 +1,46 @@
+# Normalize line endings — keep checked-in files LF, even on Windows
+* text=auto eol=lf
+
+# Shell scripts must stay LF
+*.sh text eol=lf
+
+# Windows-only files keep CRLF
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary blobs — never normalize, never diff as text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+
+# --- GitHub Linguist (language stats on the repo home page) ---
+# Goal: every real language we write shows up in the breakdown.
+
+# Force these to count even if linguist would skip them
+*.md  linguist-detectable=true
+*.css linguist-detectable=true
+*.mjs linguist-detectable=true
+
+# Make sure markdown is counted as documentation source, not vendored
+*.md -linguist-vendored -linguist-generated
+
+# Exclude generated / vendored noise from language stats
+node_modules/**     linguist-vendored
+.next/**            linguist-generated
+.vercel/**          linguist-generated
+out/**              linguist-generated
+build/**            linguist-generated
+public/**           linguist-vendored
+package-lock.json   linguist-generated
+yarn.lock           linguist-generated
+pnpm-lock.yaml      linguist-generated
+*.lock              linguist-generated
