@@ -40,3 +40,14 @@ next-env.d.ts
 .idea/
 .vscode/
 *.swp
+
+# tools/ — generated outputs (lead CSVs may contain non-public phone numbers)
+tools/*.csv
+tools/*.json
+!tools/example_*.csv
+
+# Python virtualenvs / caches
+__pycache__/
+*.pyc
+.venv/
+venv/
