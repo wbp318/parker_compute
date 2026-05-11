@@ -20,3 +20,17 @@
     text-wrap: balance;
   }
 }
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0;
+  }
+  html, body {
+    background: white !important;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

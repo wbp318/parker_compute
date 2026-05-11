@@ -47,6 +47,8 @@ Productized = fixed scope, fixed price, fixed timeline. Avoid hourly until you h
 
 **Why these prices:** they're deliberately below "Bay Area expert" rates (~$200–400/hr) and above "Fiverr prompt seller" rates (~$50). They reflect a serious but accessible operator. Raise prices 20–30% after the first 3 paying clients and a testimonial in hand.
 
+**Full service breakdown:** for the day-by-day phases of each service, what you actually receive, what success looks like, and what's explicitly out of scope, see [`04_services.md`](./04_services.md). That document is the source of truth — the website, one-pager, and proposals all derive from it.
+
 **Discovery call:** 20 minutes, free. No proposals over email without one.
 
 ---

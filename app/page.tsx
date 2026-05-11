@@ -16,25 +16,61 @@ const services = [
     name: "AI Readiness Audit",
     price: "$750",
     timeline: "1 week",
-    body: "A 30-minute interview, a review of three to five workflows you actually run, and a written report with prioritized opportunities and tool recommendations. The cheapest way to find out where this pays off for you.",
+    body: "A 30-minute interview, a review of three to five workflows you actually run, and a written report with prioritized opportunities and tool recommendations. The cheapest way to find out where this pays off — before you spend on anything you don't need.",
+    includes: [
+      "30-min discovery call + structured intake questionnaire",
+      "60–90 min workflow walkthrough on screen-share",
+      "Workflow scoring on time saved × frequency × risk",
+      "6–10 page written report with prioritized 90-day roadmap",
+      "Tool recommendations with monthly cost estimates",
+      "30-min readout call to walk through findings",
+    ],
+    excludes: "Doesn't include building anything — that's the Workflow Pack. About 30–50% of audit clients convert within 60 days.",
   },
   {
     name: "Workflow Pack",
     price: "$2,500",
     timeline: "2 weeks",
-    body: "Three documented prompts, Claude Projects, or Custom GPTs built around one workflow you pick — proposals, customer email, listing copy, intake, whatever the biggest pain is. Includes one hour of training and a 30-day fix-it window.",
+    body: "Build one production-ready workflow your team uses on day one — not a demo, not an experiment. Three documented prompts, one hour of training, and a 30-day fix-it window so you're not on your own when something needs tuning.",
+    includes: [
+      "Kickoff call + collection of 5–10 real-input / ideal-output examples",
+      "Built in your existing AI platform (Claude for Work, ChatGPT Enterprise, M365 Copilot — never consumer)",
+      "Three prompts / Projects / GPTs: primary task, quality-check, edge-case handler",
+      "5-page PDF user guide + 1-page internal usage policy",
+      "60-min training session for up to 4 team members (recorded)",
+      "30-day fix-it window with two proactive check-ins",
+    ],
+    excludes: "No custom code, API integrations, RAG pipelines, or chatbots. Those are separate engagements once we know each other.",
   },
   {
     name: "Team Training Workshop",
     price: "$1,500",
     timeline: "Half day",
-    body: "Up to eight people, in-person or remote. Tools overview, hands-on with your real work, and an internal usage policy template your team can sign on day one. The fastest way to get everyone on the same page.",
+    body: "Get an entire team productive with AI in a single afternoon. Hands-on with your team's real work, an internal usage policy signed before everyone leaves, and a per-person prompt cheat sheet they take home.",
+    includes: [
+      "15-min pre-workshop scoping call + 2-page pre-read",
+      "3–4 hour workshop for up to 8 team members",
+      "Hands-on practice with each person's real work",
+      "10–15 reusable prompt patterns + per-person cheat sheets",
+      "Internal AI usage policy walked through and signed",
+      "Full workshop recording for future hires",
+    ],
+    excludes: "Not a canned generic deck. Not a lecture. Travel within 3 hours of Lake Providence at no extra cost.",
   },
   {
     name: "Monthly Retainer",
     price: "$2,000/mo",
     timeline: "3-month minimum",
-    body: "One new workflow built per month, ongoing email and Slack support, and a monthly review call. Capped at four clients at a time so the calendar stays real.",
+    body: "Ongoing partnership: one new workflow built per month, plus operational care of everything I've built for you before. Capped at four clients at a time so calendar attention stays real.",
+    includes: [
+      "One new workflow built and shipped per month (Workflow Pack quality bar)",
+      "Email and Slack support, 1-business-day response",
+      "Bug fixes to any prior workflow at no separate charge",
+      "Monthly review call with usage stats from prior work",
+      "Quarterly health-check of all deployed workflows",
+      "\"Is this an AI problem?\" triage for the team",
+    ],
+    excludes: "Major platform rollouts (custom code, RAG, agents) are separate SOWs. After-hours emergencies bill at $200/hr if requested.",
   },
 ];
 
@@ -156,17 +192,33 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="grid gap-px overflow-hidden rounded-xl bg-ink/10 md:grid-cols-2">
+          <div className="grid gap-px overflow-hidden rounded-xl bg-ink/10 lg:grid-cols-2">
             {services.map((s) => (
-              <article key={s.name} className="bg-cream p-8 md:p-10">
+              <article key={s.name} className="bg-cream p-8 md:p-10 flex flex-col">
                 <div className="flex items-baseline justify-between gap-4">
                   <h3 className="font-serif text-2xl md:text-3xl">{s.name}</h3>
-                  <div className="text-right">
+                  <div className="text-right shrink-0">
                     <div className="font-serif text-xl text-moss">{s.price}</div>
                     <div className="text-xs uppercase tracking-wider text-ink-subtle">{s.timeline}</div>
                   </div>
                 </div>
                 <p className="mt-5 text-base leading-relaxed text-ink-muted">{s.body}</p>
+
+                <div className="mt-6">
+                  <p className="text-xs uppercase tracking-[0.18em] text-ink-subtle mb-3">What you receive</p>
+                  <ul className="space-y-2 text-[0.95rem] text-ink-muted">
+                    {s.includes.map((item) => (
+                      <li key={item} className="flex gap-3 leading-snug">
+                        <span className="mt-[0.55rem] h-1.5 w-1.5 rounded-full bg-moss shrink-0" aria-hidden="true" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="mt-auto pt-6 text-sm italic text-ink-subtle leading-relaxed">
+                  <span className="not-italic text-ink-muted font-medium">Not included:</span> {s.excludes}
+                </p>
               </article>
             ))}
           </div>

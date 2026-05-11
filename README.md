@@ -32,17 +32,26 @@ parker_compute/
 ├── 01_strategy.md          # Positioning, services, 90-day plan
 ├── 02_pricing.md           # How to price, friends-rate, scope creep rules
 ├── 03_llc_checklist.md     # Step-by-step LA LLC formation (with current fees)
+├── 04_services.md          # Canonical phase-by-phase breakdown of every service
 ├── README.md               # You are here
 │
 ├── app/                    # Next.js 14 App Router — marketing site source
 │   ├── layout.tsx          # Root layout + Google Fonts (Inter + Fraunces)
-│   ├── page.tsx            # All site content (hero, services, FAQ, etc.)
-│   └── globals.css         # Tailwind base + body styles
+│   ├── page.tsx            # Home page — hero, services, FAQ, etc.
+│   ├── globals.css         # Tailwind base + body + @page print rules
+│   └── one-pager/          # Printable sales sheet at /one-pager
+│       ├── page.tsx        # Letter-sized layout, mirrors home services
+│       └── print-button.tsx # Client-side "Save as PDF" button
 │
 ├── components/
 │   └── ui/                 # shadcn/ui primitives (only what we actually use)
 │       ├── accordion.tsx   # FAQ
 │       └── button.tsx      # CTAs
+│
+├── contracts/              # Client contract templates (NOT deployed)
+│   ├── README.md           # MSA+SOW pattern, how to use these
+│   ├── MSA_template.md     # Master Services Agreement (DRAFT)
+│   └── SOW_template.md     # Statement of Work (DRAFT, + Exhibit A change order)
 │
 ├── lib/
 │   └── utils.ts            # cn() — Tailwind class merger
@@ -56,7 +65,7 @@ parker_compute/
 ├── tsconfig.json
 ├── next.config.mjs
 ├── postcss.config.mjs
-├── .gitignore              # Standard Node + lead CSVs (privacy)
+├── .gitignore              # Standard Node + lead CSVs + .claude/ (privacy)
 └── .gitattributes          # Linguist hints — all languages counted
 ```
 
@@ -81,7 +90,7 @@ For the full strategic picture, read [`01_strategy.md`](./01_strategy.md). For p
 
 ## Strategy docs
 
-These are the three documents that define how the business is run. Read them in order.
+These are the documents that define how the business is run. Read them in order.
 
 ### 1. [`01_strategy.md`](./01_strategy.md) — Founding strategy
 Positioning, name, service productization, Louisiana LLC formation overview, sales collateral plan, working-with-law-firms cautions, a realistic 90-day milestone plan, and red-flag behaviors to watch for in yourself.
@@ -91,6 +100,13 @@ How to think about price (cost-plus vs market vs value), what the AI consulting 
 
 ### 3. [`03_llc_checklist.md`](./03_llc_checklist.md) — Louisiana LLC formation
 10-step checklist with current SOS fees ($105 online), the East Carroll Parish Police Jury contact for the occupational license (318-559-1618), Operating Agreement template, EIN application, bank account setup, E&O insurance, and a Year-1 budget summary (~$1,200–$2,000 out of pocket).
+
+### 4. [`04_services.md`](./04_services.md) — Services deep-dive (canonical)
+Phase-by-phase breakdown of every service: what happens day-by-day, what the client receives, what success looks like, and what's explicitly out of scope. Also includes bundle pricing, how to pick between services, and the engagement funnel from Audit → Workflow Pack → Retainer. **This is the source of truth — website cards, one-pager bullets, and SOW deliverables all derive from this document.**
+
+### Contracts
+
+Templates for client engagements live in [`contracts/`](./contracts/). MSA + SOW pattern with a 30-day fix-it window, change orders, Louisiana governing law, $1M E&O commitment, and a hard disclaimer of legal/medical/financial advice. **Every template requires a Louisiana attorney review pass before use with a real client.**
 
 ---
 
